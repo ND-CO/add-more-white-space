@@ -1,0 +1,101 @@
+body {
+  background-color: #fbc547;
+}
+
+.container {
+  display: flex;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color:#FFFFFF;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-size:.8em;
+  font-family: helvetica;
+  color: $secondary-color;
+  text-transform: uppercase;
+  letter-spacing: .8em;
+}
+
+.center-content {
+  align-items: center;
+  width:40%;
+  p {
+    color:$primary-color;
+    text-align: center;
+  }
+}
+
+nav {
+  position:absolute;
+  top:20%;
+  width:40%;
+  display:flex;
+  justify-content: center;
+    ul {
+      padding-left:0;
+      padding-right:0;
+
+        .nav-item {
+          padding-left:15px;
+          padding-right:15px;
+          display:inline-block; 
+        }
+          a {
+            position:relative;
+            overflow-x: hidden;
+            text-decoration:none;
+            color:$primary-color;
+              &:hover {
+              color:red;
+            }
+               .underline {
+                  position: absolute;
+                  bottom: -5px;
+                  left:0;
+                  width: 100%;
+                  border-bottom: 1px solid black;
+              }
+          }
+    }
+}
+
+.headers {
+  position: absolute;
+  align-self: center;
+}
+
+.header-top {
+  top: 5%;
+}
+
+.header-left {
+  left:0;
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+
+.header-right {
+  right: 0;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+
+.header-bottom {
+  bottom: 5%;
+}
+
+.social {
+  display:none;
+}
