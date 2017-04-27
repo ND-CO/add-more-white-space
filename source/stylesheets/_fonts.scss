@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'ATCRegular';
+    src: url('../fonts/ATCArquette-Regular.woff2') format('woff2'),
+         url('../fonts/ATCArquette-Regular.woff') format('woff'),
+         url('../fonts/ATCArquette-Regular.ttf') format('truetype'),
+		 url('../fonts/ATCArquette-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ATCSemi';
+    src: url('../fonts/ATCArquette-Medium.woff2') format('woff2'),
+         url('../fonts/ATCArquette-Medium.woff') format('woff'),
+         url('../fonts/ATCArquette-Medium.ttf') format('truetype'),
+		 url('../fonts/ATCArquette-Medium.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
