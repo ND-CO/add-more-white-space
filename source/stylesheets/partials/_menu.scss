@@ -68,14 +68,17 @@ nav {
   display:flex;
   flex-direction: column;
   justify-content: center;
+  
         .menu-button {
         display:flex;
         justify-content:center;
       }
+
       .menu-dropdown {
          display:flex;
          justify-content:center;
       }
+
     ul {
       padding-left:0;
       padding-right:0;
@@ -94,8 +97,11 @@ nav {
             overflow-x: hidden;
             text-decoration:none;
             color:$primary-color;
+            transition:all 0.5s ease;
+
               &:hover {
-              color:red;
+              color:#ff0000;
+              transition:all 0.5s ease;
             }
                .underline {
                   position: absolute;

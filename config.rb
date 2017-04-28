@@ -6,7 +6,7 @@ activate :autoprefixer do |prefix|
 end
 
 #Directory Index
-activate :directory_indexes
+# activate :directory_indexes
 
 # Live Reload
 configure :development do
