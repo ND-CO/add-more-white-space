@@ -13,10 +13,19 @@ configure :development do
  activate :livereload
 end
 
-#CircleCI Staging
-activate :s3_sync do |s3_sync|
-  s3_sync.bucket                = 'staging.addmorewhite.space'
-  s3_sync.region                = 'us-east-1'
+#CircleCI 
+configure :staging do
+    activate :s3_sync do |s3_sync|
+      s3_sync.bucket                = 'staging.addmorewhite.space'
+      s3_sync.region                = 'us-east-1'
+  end
+end
+
+configure :production do
+    activate :s3_sync do |s3_sync|
+      s3_sync.bucket                = 'addmorewhite.space'
+      s3_sync.region                = 'us-east-1'
+  end
 end
 
 configure :build do

@@ -12,8 +12,6 @@ headers.from(".menu-button", .8, {css: {opacity:"0"}, ease:Power2.easeOut}, .50)
 headers.staggerFrom(".main-intro-text, .currently-working", 2.25, {css:{opacity:0, top:"15px"}, ease:Power2.easeOut});
 
 // White Space
-
-
 var white = new TimelineMax({paused:true, reversed: true});
 white.to(".first-name-top", 1.5, {css:{top:"15"}, ease:Power2.easeOut}, .75);
 white.to(".last-name-left", 1.5, {css:{top:"15"}, ease:Power2.easeOut}, 1.25);
