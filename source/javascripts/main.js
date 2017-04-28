@@ -1,7 +1,7 @@
 // wait until DOM is loaded
+
 $(document).ready(function(){
     console.log("DOM is ready");
-
 // Intro Load
 var headers = new TimelineMax();
 headers.from(".first-name-top", 1.5, {css:{top:"-15px"}, ease:Power2.easeOut}, .75);
@@ -58,10 +58,10 @@ document.addEventListener("pjax:success", function() {
 })
 
 document.addEventListener("DOMContentLoaded", function() {
-  var pjax = new Pjax({
-    selectors: [".center-content"],
-    // currentUrlFullReload: true,
-  })
+new Pjax ({
+  elements: "a", // default is "a[href], form[action]"
+  selectors: ["title", ".my-Header", ".my-Content", ".my-Sidebar"]
+})
   console.log("Pjax initialized.", pjax)
 })
 
