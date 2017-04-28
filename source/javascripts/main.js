@@ -14,15 +14,17 @@ headers.staggerFrom(".main-intro-text, .currently-working", 2.25, {css:{opacity:
 // White Space
 
 
-var white = new TimelineMax({paused:true, reversed:false});
-white.to(".first-name-top", 1.5, {css:{opacity:"0"}, ease:Power2.easeOut}, .75);
-white.to(".last-name-left", 1.5, {css:{opacity:"0"}, ease:Power2.easeOut}, 1.25);
-white.to(".last-name-right", 1.5, {css:{opacity:"0"}, ease:Power2.easeOut}, 1.25 );
+var white = new TimelineMax({paused:true, reversed: true});
+white.to(".first-name-top", 1.5, {css:{top:"15"}, ease:Power2.easeOut}, .75);
+white.to(".last-name-left", 1.5, {css:{top:"15"}, ease:Power2.easeOut}, 1.25);
+white.to(".last-name-right", 1.5, {css:{top:"15"}, ease:Power2.easeOut}, 1.25 );
+white.to(".main-intro-text", 2, {text:"I’m a multi-disciplinary designer and developer.", ease:Power4.easeInOut});
+white.to(".currently-working", 2, {text:"I work with awesome people.", ease:Power4.easeInOut });
 white.to(".more-white-space", 2, {text:"SHOW ME LESS WHITE SPACE", ease:Linear.easeOut});
 
 var $more = $(".more-white-space")
     $more.on('click', function(event) {
-     white.reversed() ? white.play() : white.reverse();
+    white.reversed() ? white.play() : white.reverse();
 });
 
 
