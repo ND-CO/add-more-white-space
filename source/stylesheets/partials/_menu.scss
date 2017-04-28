@@ -1,0 +1,109 @@
+@charset "UTF-8";
+/*!
+ * Hamburgers
+ * @description Tasty CSS-animated hamburgers
+ * @author Jonathan Suh @jonsuh
+ * @site https://jonsuh.com/hamburgers
+ * @link https://github.com/jonsuh/hamburgers
+ */
+
+// Settings
+// ==================================================
+$hamburger-padding-x                       : 15px !default;
+$hamburger-padding-y                       : 25px !default;
+$hamburger-layer-width                     : 30px !default;
+$hamburger-layer-height                    : 2px !default;
+$hamburger-layer-spacing                   : 6px !default;
+$hamburger-layer-color                     : #000 !default;
+$hamburger-layer-border-radius             : 4px !default;
+$hamburger-hover-opacity                   : 0.7 !default;
+$hamburger-hover-transition-duration       : 0.15s !default;
+$hamburger-hover-transition-timing-function: linear !default;
+
+// To use CSS filters as the hover effect instead of opacity,
+// set $hamburger-hover-use-filter as true and
+// change the value of $hamburger-hover-filter accordingly.
+$hamburger-hover-use-filter: false !default;
+$hamburger-hover-filter    : opacity(50%) !default;
+
+// Types (Remove or comment out what you don’t need)
+// ==================================================
+$hamburger-types: (
+  spring,
+) !default;
+
+// Base Hamburger (We need this)
+// ==================================================
+@import "base";
+
+// Hamburger types
+// ==================================================
+
+@import "spring";
+
+
+// ==================================================
+// Cooking up additional types:
+//
+// The Sass for each hamburger type should be nested
+// inside an @if directive to check whether or not
+// it exists in $hamburger-types so only the CSS for
+// included types are generated.
+//
+// e.g. hamburgers/types/_new-type.scss
+//
+// @if index($hamburger-types, new-type) {
+//   .hamburger--new-type {
+//     ...
+//   }
+// }
+
+
+// Menu
+
+nav {
+  position:absolute;
+  top:20%;
+  width:40%;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+        .menu-button {
+        display:flex;
+        justify-content:center;
+      }
+      .menu-dropdown {
+         display:flex;
+         justify-content:center;
+      }
+    ul {
+      padding-left:0;
+      padding-right:0;
+
+        .nav-item {
+          top:-15px;
+          opacity:0;
+          position:relative;
+          padding-left:15px;
+          padding-right:15px;
+          display:inline-block; 
+        }
+
+          a {
+            position:relative;
+            overflow-x: hidden;
+            text-decoration:none;
+            color:$primary-color;
+              &:hover {
+              color:red;
+            }
+               .underline {
+                  position: absolute;
+                  bottom: -5px;
+                  left:0;
+                  width: 100%;
+                  border-bottom: 1px solid black;
+              }
+          }
+    }
+}
