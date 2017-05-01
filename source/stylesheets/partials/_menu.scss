@@ -92,7 +92,10 @@ nav {
           display:inline-block; 
         }
 
-          a {
+          li {
+            font-family:$primary-font;
+            font-size:1em;
+            cursor: pointer;
             position:relative;
             overflow-x: hidden;
             text-decoration:none;

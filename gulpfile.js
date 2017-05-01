@@ -1,7 +1,6 @@
 'use strict'; // http://www.w3schools.com/js/js_strict.asp
 
 // 1. LOAD PLUGINS
-import pjax from 'pjax';
 var gulp = require('gulp');
 var p    = require('gulp-load-plugins')({ // This loads all the other plugins.
   DEBUG: false,
