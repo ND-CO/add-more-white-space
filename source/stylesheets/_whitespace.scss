@@ -31,10 +31,17 @@ h1 {
 }
 
 .center-content {
+  display:flex;
   align-items: center;
+  position:absolute;
   width:40%;
+    .content {
+      position:absolute;
+    }
   p {
-    position:relative;
+    margin-top:0px;
+    margin-bottom:0px;
+    visibility:hidden;
     color:$primary-color;
     line-height:1.8em;
     text-align: center;
