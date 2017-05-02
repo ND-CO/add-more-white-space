@@ -40,12 +40,12 @@ TweenLite.set("#content01", {autoAlpha:1}); // set to the first content if wannt
 
 $(".nav-item").each(function(index, element){
     $(this).click(function(){
-      TweenMax.to(".top .inner", 1.5, {y:"-16" * (index) + "px", ease:Power2.easeOut1});
-      TweenMax.to(".left .inner", 1.5, {y:"-16" * (index) + "px", ease:Power2.easeOut1});
-      TweenMax.to(".right .inner", 1.5, {y:"-16" * (index) + "px", ease:Power2.easeOut1});
-      TweenMax.to(".bottom .inner", 1.5, {y:"-16" * (index) + "px", ease:Power2.easeOut1});      
+      TweenMax.to(".top .inner", 1.5, {y:"-16" * (index) + "px", ease:Power4.easeOut});
+      TweenMax.to(".left .inner", 1.5, {y:"-16" * (index) + "px", ease:Power4.easeOut});
+      TweenMax.to(".right .inner", 1.5, {y:"-16" * (index) + "px", ease:Power4.easeOut});
+      TweenMax.to(".bottom .inner", 1.5, {y:"-16" * (index) + "px", ease:Power4.easeOut});      
       TweenLite.to(".content", .5, {autoAlpha:0});  
-      TweenLite.from("#content0" + (index+1), 1, { css:{marginTop:"5px"} });
+      TweenLite.from("#content0" + (index+1), 1, { css:{marginTop:"5px", ease:Power2.easeOut} });
       TweenLite.to("#content0" + (index+1), 1, { autoAlpha:1 }); 
     })
 }) 
