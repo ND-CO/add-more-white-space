@@ -64,12 +64,11 @@ h1 {
     }
 }
 
-.top-slide-nav {
-    position: relative;
+.slide-in, .slide-in-bottom {
+  position: relative;
   text-align: center;
   height: 18px;
   overflow: hidden;
-  border: 1px solid red;
 }
 
 .header-top {
@@ -82,7 +81,6 @@ h1 {
   -moz-transform: rotate(-90deg);
   -ms-transform: rotate(-90deg);
   -o-transform: rotate(-90deg);
-  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
 }
 
 .header-right {
@@ -91,7 +89,6 @@ h1 {
   -moz-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
   -o-transform: rotate(90deg);
-  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
 }
 
 .header-bottom {
