@@ -6,7 +6,6 @@ deployment:
     branch: development
     commands:
       - bundle exec middleman s3_sync --environment=staging
-      
     production:
     branch: master
     commands:

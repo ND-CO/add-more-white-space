@@ -13,13 +13,13 @@ configure :development do
  activate :livereload
 end
 
-# configure :build do
-#     activate :minify_html do |html|
-#     html.remove_quotes = false
-#     html.remove_intertag_spaces = true
-#    end
-#   activate :gzip
-# end
+configure :build do
+    activate :minify_html do |html|
+    html.remove_quotes = false
+    html.remove_intertag_spaces = true
+   end
+  activate :gzip
+end
 
 # CircleCI 
 configure :staging do
