@@ -11,8 +11,10 @@ headers.from(".menu-button", .8, {css: {opacity:"0"}, ease:Power2.easeOut}, .50)
 
 // White Space
 var white = new TimelineMax({paused:true, reversed: true});
-white.to(".main-intro-text", 2, {text:"I’m a multi-disciplinary designer and developer.", ease:Power4.easeInOut});
-white.to(".currently-working", 2, {text:"I work with awesome people.", ease:Power4.easeInOut });
+white.to(".main-intro-text", 2, {text:"I’m a multi-disciplinary designer and developer. I work with awesome people.", ease:Power4.easeInOut});
+white.to(".clients-text", 2, {text:"People hire me.", ease:Power4.easeInOut});
+white.to(".thoughts-text", 2, {text:"I've got nothing right now.", ease:Power4.easeInOut});
+white.to(".contact-text", 2, {text:"Let's chat. nmarketti@gmail.com", ease:Power4.easeInOut});
 white.to(".more-white-space", 2, {text:"SHOW ME LESS WHITE SPACE", ease:Linear.easeOut});
 white.to(".slide-in", 1.5, {css:{top:"15"}, ease:Power2.easeOut}, .75);
 
