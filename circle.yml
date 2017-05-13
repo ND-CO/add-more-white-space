@@ -2,12 +2,11 @@ machine:
   ruby:
     version: 2.4.0
 deployment:
-  staging:
+  development:
     branch: development
     commands:
       - bundle exec middleman s3_sync --environment=staging
-
-    production:
+  production:
     branch: master
     commands:
       - bundle exec middleman s3_sync --environment=production

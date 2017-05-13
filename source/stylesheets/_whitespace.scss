@@ -31,10 +31,18 @@ h1 {
 }
 
 .center-content {
+  display:flex;
   align-items: center;
+  justify-content: center;
+  position:absolute;
   width:40%;
+    .content {
+      position:absolute;
+    }
   p {
-    position:relative;
+    margin-top:0px;
+    margin-bottom:0px;
+    visibility:hidden;
     color:$primary-color;
     line-height:1.8em;
     text-align: center;
@@ -59,6 +67,17 @@ h1 {
   overflow:hidden;
   position: absolute;
   align-self: center;
+    h1 {
+        margin-top:2px;
+    }
+}
+
+.slide-in, .slide-in-bottom {
+  position: relative;
+  text-align: center;
+  height: 18px;
+  overflow: hidden;
+  cursor:pointer;
 }
 
 .header-top {
@@ -71,7 +90,6 @@ h1 {
   -moz-transform: rotate(-90deg);
   -ms-transform: rotate(-90deg);
   -o-transform: rotate(-90deg);
-  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
 }
 
 .header-right {
@@ -80,7 +98,6 @@ h1 {
   -moz-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
   -o-transform: rotate(90deg);
-  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
 }
 
 .header-bottom {
@@ -91,7 +108,7 @@ h1 {
 
         &:hover {
           transition:all 0.5s ease;
-          color:blue;
+          color:#ff0000;
           
         }
     }
@@ -100,3 +117,67 @@ h1 {
 .social {
   display:none;
 }
+
+
+// MOBILE
+
+/* IPHONE 7+ */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) { 
+
+.header-right {
+    right: -80px;
+}
+
+.header-left {
+  left:-80px;
+}
+
+.header-top {
+  top:2%;
+}
+
+.header-bottom {
+  bottom:2%;
+}
+
+.center-content{
+  width:60%;
+}
+}
+
+/* IPHONE 7 */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 736px) 
+  and (orientation: portrait) { 
+
+.header-right {
+    right: -80px;
+}
+
+.header-left {
+  left:-80px;
+}
+
+.header-top {
+  top:2%;
+}
+
+.header-bottom {
+  bottom:2%;
+}
+
+.center-content{
+  width:60%;
+}
+
+
+}
+
+
+
+
