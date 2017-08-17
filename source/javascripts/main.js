@@ -40,12 +40,11 @@ menu.staggerTo(".nav-item", .5, {css:{opacity:"1", top:"0"}, ease:Power2.easeOut
 
 TweenLite.set("#content01", {autoAlpha:1}); // set to the first content if wannted
 
+var textSlide = ".top .inner, .left .inner, .right .inner, .bottom .inner"
+
 $(".nav-item").each(function(index, element){
     $(this).click(function(){
-      TweenMax.to(".top .inner", 1.5, {y:"-16" * (index) + "px", ease:Power4.easeOut});
-      TweenMax.to(".left .inner", 1.5, {y:"-16" * (index) + "px", ease:Power4.easeOut});
-      TweenMax.to(".right .inner", 1.5, {y:"-16" * (index) + "px", ease:Power4.easeOut});
-      TweenMax.to(".bottom .inner", 1.5, {y:"-16" * (index) + "px", ease:Power4.easeOut});      
+      TweenMax.to(textSlide, 1.5, {y:"-16" * (index) + "px", ease:Power4.easeOut});   
       TweenLite.to(".content", .5, {autoAlpha:0});  
       TweenLite.from("#content0" + (index+1), 1, { css:{marginTop:"5px", ease:Power2.easeOut} });
       TweenLite.to("#content0" + (index+1), 1, { autoAlpha:1 }); 
