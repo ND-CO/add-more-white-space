@@ -77,6 +77,7 @@ h1 {
   text-align: center;
   height: 18px;
   overflow: hidden;
+  cursor:pointer;
 }
 
 .header-top {
@@ -116,3 +117,67 @@ h1 {
 .social {
   display:none;
 }
+
+
+// MOBILE
+
+/* IPHONE 7+ */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) { 
+
+.header-right {
+    right: -80px;
+}
+
+.header-left {
+  left:-80px;
+}
+
+.header-top {
+  top:2%;
+}
+
+.header-bottom {
+  bottom:2%;
+}
+
+.center-content{
+  width:60%;
+}
+}
+
+/* IPHONE 7 */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 736px) 
+  and (orientation: portrait) { 
+
+.header-right {
+    right: -80px;
+}
+
+.header-left {
+  left:-80px;
+}
+
+.header-top {
+  top:2%;
+}
+
+.header-bottom {
+  bottom:2%;
+}
+
+.center-content{
+  width:60%;
+}
+
+
+}
+
+
+
+
